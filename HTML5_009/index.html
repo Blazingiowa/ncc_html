@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>NCC電子遊戯部</title>
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/jquery.js"></script>
+<script src="js/script.js"></script>
+<script src="js/jquery.smoothscroll.js"></script>
+<script src="js/jquery.scrollshow.js"></script>
+<script src="js/jquery.rollover.js"></script>
+<script src="js/jquery.slidewide.js"></script>
+<script>
+$(function($){
+	$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10, headerfix : $('header')});
+	$('.totop').scrollshow({position : 500});
+	$('.slide').slidewide({
+		touch         : true,
+		touchDistance : '80',
+		autoSlide     : true,
+		repeat        : true,
+		interval      : 3000,
+		duration      : 500,
+		easing        : 'swing',
+		imgHoverStop  : true,
+		navHoverStop  : true,
+		prevPosition  : 0,
+		nextPosition  : 0,
+		viewSlide     : 1,
+		baseWidth     : 980,
+		navImg        : false,
+		navImgCustom  : false,
+		navImgSuffix  : ''
+	});
+	$('.slidePrev img').rollover();
+	$('.slideNext img').rollover();
+	});
+</script>
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body>
+<header>
+	<div class="inner">
+		<div class="header_left">
+			<p class="summary">
+			NCC電子遊戯部の公式ホームページです。
+			</p>
+			<h1><a href="index.html"><img src="images/logo.png" alt="NCC電子遊戯部"></a></h1>
+		</div><!-- /.header_left -->
+		<div class="header_right">
+			<div class="header_nav"><div class="header_tel"><span class="phonenumber">NCC電子遊戯部</span><br><span class="open">NSGスクエア6Fにて活動中です</span></div><!-- /.header_tel -->
+				<div class="header_require"><a href="">電子遊戯部資料請求</a></div><!-- /.header_require -->
+				<div class="header_contact"><a href="">お問い合わせ</a></div><!-- /.header_require -->
+			</div><!-- /.header_nav -->
+		</div><!-- /.header_right -->
+	</div><!-- /.inner -->
+	<div id="spMenu"><span id="navBtn"><span id="navBtnIcon"></span></span></div>
+	<nav>
+		<div class="inner">
+			<ul class="gnav">
+				<li><a href="index.html">ホーム</a></li>
+				<li class="subnav"><a href="index.html">遊戯部情報</a>
+					<ul>
+						<li><a href="index.html">遊戯部概要</a></li>
+						<li><a href="index.html">遊戯部理念</a></li>
+						<li><a href="index.html">活動</a></li>
+						<li><a href="index.html">情報</a></li>
+					</ul>
+				</li>
+				<li class="subnav"><a href="index.html">電子遊戯部員情報</a>
+					<ul>
+						<li class="subnav"><a href="index.html">遊戯部員一覧</a>
+							<ul>
+								<li><a href="index.html">小林 史昌</a></li>
+								<li><a href="index.html">八木 智秋</a></li>
+								<li><a href="index.html">大野 大</a></li>
+								<li><a href="index.html">増田 龍備</a></li>
+								<li><a href="index.html">廣川 知樹</a></li>
+								<li><a href="index.html">荒井 孝二</a></li>
+								<li><a href="index.html">渡邉 泰貴</a></li>
+								<li><a href="index.html">菅 歩夢</a></li>
+								<li><a href="index.html">廣川 拓実</a></li>
+							</ul>
+						</li>
+						<li class="subnav"><a href="index.html">遊戯部員一覧(discord)</a>
+							<ul>
+								<li><a href="index.html">tukiya_kanna</a></li>
+								<li><a href="index.html">waithi</a></li>
+								<li><a href="index.html">蕎麦_ソルバート</a></li>
+								<li><a href="index.html">ゆに</a></li>
+								<li><a href="index.html">完全瀟洒咲夜</a></li>
+								<li><a href="index.html">AK</a></li>
+								<li><a href="index.html">Arakawa</a></li>
+								<li><a href="index.html">Re1sen</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="index.html">入部情報</a></li>
+				<li><a href="index.html">お問い合わせ</a></li>
+				<li class="subnav"><a href="sample.html">活動遊戯作品一覧</a>
+					<ul>
+						<li><a href="sample.html">Rainbow Six Siege</a></li>
+						<li><a href="sample.html">World of Warships</a></li>
+						<li><a href="sample.html">League of Legends</a></li>
+						<li><a href="sample.html">PLAYERUNKNOWN'S BATTLEGROUNDS</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div><!-- /.inner -->
+	</nav>
+</header>
+
+<div class="slide">
+	<ul class="slideInner">
+		<li><a href="index.html"><img src="images/photo01.jpg" alt=""></a></li>
+		<li><a href="index.html"><img src="images/photo02.jpg" alt=""></a></li>
+		<li><a href="index.html"><img src="images/photo03.jpg" alt=""></a></li>
+	</ul>
+	<div class="slidePrev"><img src="images/nav_prev.png" alt="前へ"></div>
+	<div class="slideNext"><img src="images/nav_next.png" alt="次へ"></div>
+	<div class="controlNav"></div>
+</div><!-- /.slide -->
+
+<div id="contents">
+	<div id="main">
+		<h3 id="news">新着情報</h3>
+		<dl class="info">
+			<dt><span>2019-07-06</span></dt>
+			<dd>
+				 NCC電子遊戯部ホームページ開設！！
+			</dd>
+			<dt><span>2019-07-06</span></dt>
+			<dd>
+				 いろいろ自由にしてよき。
+			</dd>
+		</dl>
+		<div class="col_two_one">
+			<h3>部員一覧</h3>
+			<ul>
+				<li>
+				<img src="images/photo.png" alt="">
+				<h4>小林史昌</h4>
+				<p>紹介文</p>
+				</li>
+				<li>
+				<img src="images/photo.png" alt="">
+				<h4>八木智秋</h4>
+				<p>紹介文</p>
+				</li>
+				<li>
+				<img src="images/photo.png" alt="">
+				<h4>荒井孝二</h4>
+				<p>紹介文</p>
+				</li>
+				 <li>
+				<img src="images/photo.png" alt="">
+				<h4>廣川知樹</h4>
+				<p>紹介文</p>
+				</li>
+			</li>
+			 <li>
+			<img src="images/photo.png" alt="">
+			<h4>大野大</h4>
+			<p>紹介文</p>
+			</li>
+		</li>
+		 <li>
+		<img src="images/photo.png" alt="">
+		<h4>増田龍備</h4>
+		<p>紹介文</p>
+		</li>
+	</li>
+	 <li>
+	<img src="images/photo.png" alt="">
+	<h4>渡邉泰貴</h4>
+	<p>紹介文</p>
+	</li>
+</li>
+ <li>
+<img src="images/photo.png" alt="">
+<h4>廣川拓実</h4>
+<p>紹介文</p>
+</li>
+			</ul>
+			<p class="textR"><a href="index.html">&raquo;もっと見る</a></p>
+		</div><!-- /.staff -->
+	</div><!-- /#main -->
+	<div id="sub">
+		<h3>部員一覧</h3>
+		<ul class="submenu">
+			<li><a href="index.html">小林史昌</a></li>
+			<li><a href="index.html">八木智秋</a></li>
+			<li><a href="index.html">廣川知樹</a></li>
+			<li><a href="index.html">荒井孝二</a></li>
+			<li><a href="index.html">渡邉泰貴</a></li>
+			<li><a href="index.html">廣川拓実</a></li>
+		</ul>
+		<h3>直近活動一覧</h3>
+		<p>
+		電子遊戯部の活動を紹介します
+		</p>
+		<ul class="bnr">
+			<li><a href="index.html"><img src="images/banner.png" alt=""></a></li>
+			<li><a href="index.html"><img src="images/banner.png" alt=""></a></li>
+			<li><a href="index.html"><img src="images/banner.png" alt=""></a></li>
+			<li><a href="index.html"><img src="images/banner.png" alt=""></a></li>
+		</ul>
+	</div><!-- /#sub -->
+</div><!-- /#contents -->
+
+<footer>
+	<div class="footmenu">
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="index.html">遊戯部情報</a></li>
+			<li><a href="index.html">遊戯部員情報</a></li>
+			<li><a href="index.html">よくわからん情報</a></li>
+			<li><a href="index.html">サイトポリシーについて</a></li>
+			<li><a href="index.html">プライバシーポリシーについて</a></li>
+			<li><a href="index.html">お問い合わせ</a></li>
+			<li><a href="sample.html">サイトマップ</a></li>
+		</ul>
+	</div><!-- /.footmenu -->
+	<div class="copyright">Copyright &#169; 20XX - 20XX SITENAME All Rights Reserved.</div><!-- /.copyright -->
+</footer>
+
+<div class="totop"><a href="#"><img src="images/totop.png" alt="ページのトップへ戻る"></a></div><!-- /.totop -->
+</body>
+</html>
